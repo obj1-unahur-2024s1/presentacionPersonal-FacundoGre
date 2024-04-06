@@ -1,35 +1,43 @@
 ![Logo UNAHUR](./assets/UNAHUR.png)
 
-Bienvenidos a
-# ProgramaciÛn con objetos I
 
-En esta materia aprender·n sobre la famosa POO _(OOP en inglÈs)_, un paradigma que propone como base **objetos** que tienen un **estado** y **comportamiento**.
-Para ello usaremos como herramienta el lenguaje Wollok.
 
 ```
-object programacionConObjetos { 
-    method saludar() { 
-        return  "Bienvenidxs!" 
-    }
-}
+class Persona:
+    def __init__(self, nombre, edad, carrera, facultad, gustos, foto_url):
+        self.nombre = nombre
+        self.edad = edad
+        self.carrera = carrera
+        self.facultad = facultad
+        self.gustos = gustos
+        self.foto_url = foto_url
+
+    def presentarse(self):
+        print(f"Hola, soy {self.nombre}, tengo {self.edad} a√±os y estudio {self.carrera} en la {self.facultad}.")
+        print(f"√âste soy yo, jeje \n {self.foto_url}")
+        print("\nMis gustos:")
+        for gusto in self.gustos:
+            print(f"* {gusto.capitalize()}")
+        print("\nTengo muchas expectativas para la materia y espero que todos tengamos una excelente cursada.")
+
+if __name__ == "__main__":
+    yo = Persona(nombre="Facundo Gr√©", edad=23, carrera="Licenciatura en Inform√°tica", facultad="Universidad de Hurlingham", gustos=["programaci√≥n", "m√∫sica", "f√∫tbol", "f√≥rmula 1", "lo' juegito' de compu eso' que juegan lo' pibe ahora, viste?", "juntarme con amigos", "comer"], foto_url="https://lh3.googleusercontent.com/a/ACg8ocI8Gy_WXAilkcCtC1pZsffLV-2mydhsL7-uFY6Fm4H1xbrHHS5P=s288-c-no")
+    yo.presentarse()
 ```
+Output:
 
-## Datos de la cursada :book:
-* Modalidad Mixta
-* Horario comisiÛn 1 **turno noche**: Martes 18 a 22hs y S·bado 10 a 12hs.
-* Horario comisiÛn 2 **turno maÒana**: MiÈrcoles 8 a 12hs y S·bado 10 a 12hs. 
-* Este cuatrimestre los profesores somos Gerardo Gonz·lez Tulian, Lucas Spigariol, Cristian Ciarallo y Hern·n Coniglio
-* Adem·s nos acompaÒan como colaboradores Valentino Chiappanni, Manuel NuÒez y Lucian Coniglio.
+```
+Hola, soy Facundo Gr√©, tengo 23 a√±os y estudio Licenciatura en Inform√°tica en la Universidad de Hurlingham.
+√âste soy yo, jeje 
+ https://lh3.googleusercontent.com/a/ACg8ocI8Gy_WXAilkcCtC1pZsffLV-2mydhsL7-uFY6Fm4H1xbrHHS5P=s288-c-no
 
-## Links importantes :monocle_face:
-- [x] [P·gina principal](https://obj1-unahur.github.io/) de la materia (no olviden entrar seguido!) 
-- [x] [Cronograma](https://docs.google.com/spreadsheets/d/13rFU2mObqdFF_2Ocimey_oHJ0Ldv-Gx0S1N4cfHKO4Q/edit?usp=sharing) de clases.
-- [x] [Matricularse](https://discord.gg/tqyHtPt) y ver el canal de Discord.
+Mis gustos:
+* Programaci√≥n
+* M√∫sica
+* F√∫tbol
+* F√≥rmula 1
+* Lo' juegito' de compu eso' que juegan lo' pibe ahora, viste?
+* Juntarme con amigos
+* Comer
 
-
-### Referencias Markdown 
-* [Wikipedia](https://es.wikipedia.org/wiki/Markdown)
-
-* [GuÌa R‡pida](https://greg.schueler.us/doc/markdown.txt) de la sintaxis _(en inglÈs)_
-
-* [Emojis!](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) :sunglasses:
+Tengo muchas expectativas para la materia y espero que todos tengamos una excelente cursada.
