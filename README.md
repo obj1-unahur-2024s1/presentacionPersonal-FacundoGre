@@ -21,15 +21,15 @@ class Persona:
         print("\nTengo muchas expectativas para la materia y espero que todos tengamos una excelente cursada.")
 
 if __name__ == "__main__":
-    yo = Persona(nombre="Facundo Gré", edad=23, carrera="Licenciatura en Informática", facultad="Universidad de Hurlingham", gustos=["programación", "música", "fútbol", "fórmula 1", "lo' juegito' de compu eso' que juegan lo' pibe ahora, viste?", "juntarme con amigos", "comer"], foto_url="https://lh3.googleusercontent.com/a/ACg8ocI8Gy_WXAilkcCtC1pZsffLV-2mydhsL7-uFY6Fm4H1xbrHHS5P=s288-c-no")
+    yo = Persona(nombre="Facundo Gré", edad=23, carrera="Licenciatura en Informática", facultad="Universidad de Hurlingham", gustos=["programación", "música", "fútbol", "fórmula 1", "lo' juegito' de compu eso' que juegan lo' pibe ahora, viste?", "juntarme con amigos", "comer"], foto_url="./assets/yo.jpg")
     yo.presentarse()
 ```
 Output:
 
-```
 Hola, soy Facundo Gré, tengo 23 años y estudio Licenciatura en Informática en la Universidad de Hurlingham.
+
 Éste soy yo, jeje 
- https://lh3.googleusercontent.com/a/ACg8ocI8Gy_WXAilkcCtC1pZsffLV-2mydhsL7-uFY6Fm4H1xbrHHS5P=s288-c-no
+ ![Yo](./assets/yo.jpg)
 
 Mis gustos:
 * Programación
