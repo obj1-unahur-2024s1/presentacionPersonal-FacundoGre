@@ -28,8 +28,13 @@ Output:
 
 Hola, soy Facundo Gré, tengo 23 años y estudio Licenciatura en Informática en la Universidad de Hurlingham.
 
-Éste soy yo, jeje 
- ![Yo](./assets/yo.jpg)
+Éste soy yo, jeje
+
+
+ <p align="center">
+  <img src="./assets/yo.jpg" width="500">
+</p>
+
 
 Mis gustos:
 * Programación
